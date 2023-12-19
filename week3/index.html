@@ -11,37 +11,80 @@
       margin: 0;
       padding: 0;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
       height: 100vh;
       background-image: url('https://images7.alphacoders.com/133/1330752.png');
       background-size: cover;
       background-position: center;
     }
+    nav {
+      width: 100%;
+      background-color: #333;
+      text-align: center;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
     .intro-container {
       text-align: center;
-      padding: 40px;
+      padding: 20px;
       background-color: rgba(255, 255, 255, 0.8);
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      position: relative;
+      margin-top: 20px; 
+    }
+    .profile-frame {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 5px solid #fff;
+      margin-top: 20px; 
+    }
+    .profile-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
     h1 {
+      margin-bottom: 10px;
+      color: #fff;
+    }
+    h2 {
       margin-bottom: 10px;
       color: #333;
     }
     p {
       color: #555;
       margin-bottom: 20px;
+      font-size: 18px; /* Changed font size to 18px */
     }
   </style>
 </head>
 <body>
+  <nav>
+    <a href="#">Comics</a>
+    <a href="#">Movies & TV</a>
+    <a href="#">Games</a>
+    <a href="#">News</a>
+    <a href="#">Target</a>
+  </nav>
+  
+  <h1>Every damn night, and yet, I am still here.</h1>
+  <h1>I'm the Goddam Batman.</h1>
+  
+  <div class="profile-frame">
+    <img src="https://i.pinimg.com/originals/8c/07/a7/8c07a7c9b457fb64b6a9f5b91d4801ad.jpg" alt="Batman">
+  </div>
+  
   <div class="intro-container">
-    <h1>Every damn night, and yet, I am still here.</h1>
-	<h1>I'm the Goddam Batman.</h1>
     <p>I'm Sandro Jay Pardines, a student at Asia Pacific College.</p>
     <p>WEBPROG SS221</p>
   </div>
+  
 </body>
 </html>
