@@ -2,14 +2,14 @@
 <html>
 <body>
 
-<h1>JavaScript Booleans</h1>
-<p>Booleans and Boolean objects cannot be safely compared.</p>
+<h2>Never Create Strings as Objects</h2>
+<p>JavaScript objects cannot be compared.</p>
 
 <p id="demo"></p>
 
 <script>
-const x = new Boolean(false);
-const y = new Boolean(false);
+let x = new String("John");  // x is an object
+let y = new String("John");  // y is an object
 document.getElementById("demo").innerHTML = (x===y);
 </script>
 
