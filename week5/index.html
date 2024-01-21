@@ -2,19 +2,24 @@
 <html>
 <body>
 
-<h2>JavaScript const</h2>
+<h2>JavaScript Strings</h2>
+
+<p>You can use quotes inside a string, as long as they don't match the quotes surrounding the string:</p>
 
 <p id="demo"></p>
 
 <script>
-try {
-  const PI = 3.141592653589793;
-  PI = 3.14;
-}
-catch (err) {
-  document.getElementById("demo").innerHTML = err;
-}
+let answer1 = "It's alright";
+let answer2 = "He is called 'Johnny'";
+let answer3 = 'He is called "Johnny"';
+
+document.getElementById("demo").innerHTML =
+answer1 + "<br>" + 
+answer2 + "<br>" + 
+answer3;
 </script>
 
 </body>
 </html>
+
+
