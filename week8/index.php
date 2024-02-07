@@ -3,6 +3,8 @@
     $facebook_url = "https://www.facebook.com";
     $discord_url = "https://www.discord.com";
     $github_url = "https://github.com";
+	
+	$games_description = "In my free time, I usually play video games, but these three are by far my favorites.";
 ?>
 
 <!DOCTYPE html>
@@ -218,7 +220,7 @@
     </a>
     <a href="#hobbies">
         <i class="fas fa-hiking fa-lg"></i>
-        <span>Hobbies</span>
+        <span>Hobby</span>
     </a>
     <a href="#games">
         <i class="fas fa-gamepad fa-lg"></i>
@@ -275,7 +277,7 @@
 <div class="content" id="games" style="display: none;">
 
     <h1>Games</h1>
-
+	<p style = "color: white;"><?php echo $games_description; ?></p>
     <div class="intro-container games-container">
         <div class="game-card">
             <img src="https://yt3.googleusercontent.com/ytc/AIf8zZQskdbpL9wlq1y-N5sHZY1L__ap1g-e6rxFJYmoPQ=s900-c-k-c0x00ffffff-no-rj"
