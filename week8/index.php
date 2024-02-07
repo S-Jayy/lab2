@@ -28,7 +28,7 @@
             display: flex;
             flex-direction: row;
             align-items: flex-end;
-            z-index: 999; /* Ensure it's on top of other content */
+            z-index: 999; 
         }
 
         .sidebar a {
@@ -39,7 +39,7 @@
             align-items: center;
             padding: 10px;
             transition: color 0.3s ease;
-            margin-left: 10px; /* Add margin between icons */
+            margin-left: 10px; 
         }
 
         .sidebar a i {
@@ -192,6 +192,16 @@
         .social-links a .fab.fa-discord {
             color: #7289da;
         }
+		
+		/* Updated CSS for the footer */
+		footer {
+			position: fixed;
+			bottom: 10px;
+			left: 10px;
+			font-size: 14px;
+			color: #888;
+		}
+
     </style>
 </head>
 <body>
@@ -279,14 +289,24 @@
     </div>
 </div>
 
-<div class="social-links">
-    <a href="https://www.facebook.com" target="_blank">
-        <i class="fab fa-facebook fa-lg"></i>
-    </a>
-    <a href="https://www.discord.com" target="_blank">
-        <i class="fab fa-discord fa-lg"></i>
-    </a>
-</div>
+	<div class="social-links">
+		<a href="https://www.facebook.com" target="_blank">
+			<i class="fab fa-facebook fa-lg"></i>
+		</a>
+		<a href="https://www.discord.com" target="_blank">
+			<i class="fab fa-discord fa-lg"></i>
+		</a>
+	</div>
+
+	<?php
+
+	function generate_footer() {
+		$current_year = date('Y'); 
+		echo "<footer>&copy; $current_year Sandro Jay Pardines. Learn more at <a href=\"https://my-learning.w3schools.com/\" target=\"_blank\" style=\"color: white;\">W3Schools</a></footer>";
+	}
+	?>
+	<?php generate_footer(); 
+	?>
 
 <script>
     document.querySelectorAll('.sidebar a').forEach(link => {
