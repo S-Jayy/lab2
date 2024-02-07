@@ -1,3 +1,10 @@
+<?php
+    // Define variables for social media URLs
+    $facebook_url = "https://www.facebook.com";
+    $discord_url = "https://www.discord.com";
+    $github_url = "https://github.com";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -193,7 +200,6 @@
             color: #7289da;
         }
 		
-		/* Updated CSS for the footer */
 		footer {
 			position: fixed;
 			bottom: 10px;
@@ -232,10 +238,9 @@
         <?php
         $about_me = array(
             "Name" => "Sandro Jay Pardines",
-            "Age" => 25,
             "Location" => "Asia Pacific College",
             "Program" => "WEBPROG SS221"
-        );
+        );	
         ?>
         <p><?php echo "I'm {$about_me['Name']}, a student at {$about_me['Location']}."; ?></p>
         <p><?php echo $about_me['Program']; ?></p>
@@ -290,12 +295,15 @@
 </div>
 
 	<div class="social-links">
-		<a href="https://www.facebook.com" target="_blank">
-			<i class="fab fa-facebook fa-lg"></i>
-		</a>
-		<a href="https://www.discord.com" target="_blank">
-			<i class="fab fa-discord fa-lg"></i>
-		</a>
+    <a href="<?php echo $facebook_url; ?>" target="_blank">
+        <i class="fab fa-facebook fa-lg"></i>
+    </a>
+    <a href="<?php echo $discord_url; ?>" target="_blank">
+        <i class="fab fa-discord fa-lg"></i>
+    </a>
+    <a href="<?php echo $github_url; ?>" target="_blank">
+        <i class="fab fa-github fa-lg"></i>
+    </a>
 	</div>
 
 	<?php
